@@ -15,6 +15,7 @@
 		ABF230991EE00AE30015CEAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABF230971EE00AE30015CEAF /* LaunchScreen.storyboard */; };
 		ABF230A41EE00AE30015CEAF /* RecordDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF230A31EE00AE30015CEAF /* RecordDemoTests.m */; };
 		ABF230AF1EE00AE30015CEAF /* RecordDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF230AE1EE00AE30015CEAF /* RecordDemoUITests.m */; };
+		ABF230BE1EE00B570015CEAF /* RecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF230BD1EE00B570015CEAF /* RecordView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		ABF230AA1EE00AE30015CEAF /* RecordDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecordDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABF230AE1EE00AE30015CEAF /* RecordDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordDemoUITests.m; sourceTree = "<group>"; };
 		ABF230B01EE00AE30015CEAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABF230BC1EE00B570015CEAF /* RecordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordView.h; sourceTree = "<group>"; };
+		ABF230BD1EE00B570015CEAF /* RecordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				ABF230971EE00AE30015CEAF /* LaunchScreen.storyboard */,
 				ABF2309A1EE00AE30015CEAF /* Info.plist */,
 				ABF230891EE00AE30015CEAF /* Supporting Files */,
+				ABF230BC1EE00B570015CEAF /* RecordView.h */,
+				ABF230BD1EE00B570015CEAF /* RecordView.m */,
 			);
 			path = RecordDemo;
 			sourceTree = "<group>";
@@ -207,7 +212,8 @@
 				TargetAttributes = {
 					ABF230851EE00AE30015CEAF = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = XDK267KQ83;
+						ProvisioningStyle = Manual;
 					};
 					ABF2309E1EE00AE30015CEAF = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -273,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABF230BE1EE00B570015CEAF /* RecordView.m in Sources */,
 				ABF230911EE00AE30015CEAF /* ViewController.m in Sources */,
 				ABF2308E1EE00AE30015CEAF /* AppDelegate.m in Sources */,
 				ABF2308B1EE00AE30015CEAF /* main.m in Sources */,
@@ -424,10 +431,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XDK267KQ83;
 				INFOPLIST_FILE = RecordDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhangjiong.RecordDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "eeaf2666-7404-4e47-a89d-45dd0b48dcb5";
+				PROVISIONING_PROFILE_SPECIFIER = "XC Wildcard *";
 			};
 			name = Debug;
 		};
@@ -435,10 +446,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XDK267KQ83;
 				INFOPLIST_FILE = RecordDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhangjiong.RecordDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "eeaf2666-7404-4e47-a89d-45dd0b48dcb5";
+				PROVISIONING_PROFILE_SPECIFIER = "XC Wildcard *";
 			};
 			name = Release;
 		};

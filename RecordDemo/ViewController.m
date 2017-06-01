@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "RecordView.h"
 @interface ViewController ()
 
 @end
