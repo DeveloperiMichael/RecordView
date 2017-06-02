@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB5CA6021EE0F86700E80A64 /* ImageSource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AB5CA6011EE0F86700E80A64 /* ImageSource.bundle */; };
+		AB5CA6161EE1011B00E80A64 /* zuoye_icon_record1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB5CA6101EE1011B00E80A64 /* zuoye_icon_record1@2x.png */; };
+		AB5CA6171EE1011B00E80A64 /* zuoye_icon_record1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB5CA6111EE1011B00E80A64 /* zuoye_icon_record1@3x.png */; };
+		AB5CA6181EE1011B00E80A64 /* zuoye_icon_record2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB5CA6121EE1011B00E80A64 /* zuoye_icon_record2@2x.png */; };
+		AB5CA6191EE1011B00E80A64 /* zuoye_icon_record2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB5CA6131EE1011B00E80A64 /* zuoye_icon_record2@3x.png */; };
+		AB5CA61A1EE1011B00E80A64 /* zuoye_icon_record3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB5CA6141EE1011B00E80A64 /* zuoye_icon_record3@2x.png */; };
+		AB5CA61B1EE1011B00E80A64 /* zuoye_icon_record3@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB5CA6151EE1011B00E80A64 /* zuoye_icon_record3@3x.png */; };
+		AB5CA61E1EE109BB00E80A64 /* AVPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5CA61D1EE109BB00E80A64 /* AVPlayerManager.m */; };
+		AB5CA6211EE130D100E80A64 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5CA6201EE130D100E80A64 /* AVFoundation.framework */; };
 		ABF2308B1EE00AE30015CEAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF2308A1EE00AE30015CEAF /* main.m */; };
 		ABF2308E1EE00AE30015CEAF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF2308D1EE00AE30015CEAF /* AppDelegate.m */; };
 		ABF230911EE00AE30015CEAF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF230901EE00AE30015CEAF /* ViewController.m */; };
@@ -36,6 +45,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB5CA6011EE0F86700E80A64 /* ImageSource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ImageSource.bundle; sourceTree = "<group>"; };
+		AB5CA6101EE1011B00E80A64 /* zuoye_icon_record1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zuoye_icon_record1@2x.png"; sourceTree = "<group>"; };
+		AB5CA6111EE1011B00E80A64 /* zuoye_icon_record1@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zuoye_icon_record1@3x.png"; sourceTree = "<group>"; };
+		AB5CA6121EE1011B00E80A64 /* zuoye_icon_record2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zuoye_icon_record2@2x.png"; sourceTree = "<group>"; };
+		AB5CA6131EE1011B00E80A64 /* zuoye_icon_record2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zuoye_icon_record2@3x.png"; sourceTree = "<group>"; };
+		AB5CA6141EE1011B00E80A64 /* zuoye_icon_record3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zuoye_icon_record3@2x.png"; sourceTree = "<group>"; };
+		AB5CA6151EE1011B00E80A64 /* zuoye_icon_record3@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zuoye_icon_record3@3x.png"; sourceTree = "<group>"; };
+		AB5CA61C1EE109BB00E80A64 /* AVPlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVPlayerManager.h; sourceTree = "<group>"; };
+		AB5CA61D1EE109BB00E80A64 /* AVPlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVPlayerManager.m; sourceTree = "<group>"; };
+		AB5CA6201EE130D100E80A64 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		ABF230861EE00AE30015CEAF /* RecordDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecordDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABF2308A1EE00AE30015CEAF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ABF2308C1EE00AE30015CEAF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -61,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB5CA6211EE130D100E80A64 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +101,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB5CA60F1EE1011B00E80A64 /* statusImage */ = {
+			isa = PBXGroup;
+			children = (
+				AB5CA6101EE1011B00E80A64 /* zuoye_icon_record1@2x.png */,
+				AB5CA6111EE1011B00E80A64 /* zuoye_icon_record1@3x.png */,
+				AB5CA6121EE1011B00E80A64 /* zuoye_icon_record2@2x.png */,
+				AB5CA6131EE1011B00E80A64 /* zuoye_icon_record2@3x.png */,
+				AB5CA6141EE1011B00E80A64 /* zuoye_icon_record3@2x.png */,
+				AB5CA6151EE1011B00E80A64 /* zuoye_icon_record3@3x.png */,
+			);
+			path = statusImage;
+			sourceTree = "<group>";
+		};
+		AB5CA61F1EE130D100E80A64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB5CA6201EE130D100E80A64 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ABF2307D1EE00AE30015CEAF = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +129,7 @@
 				ABF230A21EE00AE30015CEAF /* RecordDemoTests */,
 				ABF230AD1EE00AE30015CEAF /* RecordDemoUITests */,
 				ABF230871EE00AE30015CEAF /* Products */,
+				AB5CA61F1EE130D100E80A64 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,13 +150,16 @@
 				ABF2308D1EE00AE30015CEAF /* AppDelegate.m */,
 				ABF2308F1EE00AE30015CEAF /* ViewController.h */,
 				ABF230901EE00AE30015CEAF /* ViewController.m */,
+				ABF230BC1EE00B570015CEAF /* RecordView.h */,
+				ABF230BD1EE00B570015CEAF /* RecordView.m */,
+				AB5CA61C1EE109BB00E80A64 /* AVPlayerManager.h */,
+				AB5CA61D1EE109BB00E80A64 /* AVPlayerManager.m */,
 				ABF230921EE00AE30015CEAF /* Main.storyboard */,
 				ABF230951EE00AE30015CEAF /* Assets.xcassets */,
 				ABF230971EE00AE30015CEAF /* LaunchScreen.storyboard */,
 				ABF2309A1EE00AE30015CEAF /* Info.plist */,
+				AB5CA60F1EE1011B00E80A64 /* statusImage */,
 				ABF230891EE00AE30015CEAF /* Supporting Files */,
-				ABF230BC1EE00B570015CEAF /* RecordView.h */,
-				ABF230BD1EE00B570015CEAF /* RecordView.m */,
 			);
 			path = RecordDemo;
 			sourceTree = "<group>";
@@ -123,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				ABF2308A1EE00AE30015CEAF /* main.m */,
+				AB5CA6011EE0F86700E80A64 /* ImageSource.bundle */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -252,9 +298,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB5CA61B1EE1011B00E80A64 /* zuoye_icon_record3@3x.png in Resources */,
 				ABF230991EE00AE30015CEAF /* LaunchScreen.storyboard in Resources */,
 				ABF230961EE00AE30015CEAF /* Assets.xcassets in Resources */,
+				AB5CA6171EE1011B00E80A64 /* zuoye_icon_record1@3x.png in Resources */,
+				AB5CA61A1EE1011B00E80A64 /* zuoye_icon_record3@2x.png in Resources */,
+				AB5CA6191EE1011B00E80A64 /* zuoye_icon_record2@3x.png in Resources */,
 				ABF230941EE00AE30015CEAF /* Main.storyboard in Resources */,
+				AB5CA6021EE0F86700E80A64 /* ImageSource.bundle in Resources */,
+				AB5CA6161EE1011B00E80A64 /* zuoye_icon_record1@2x.png in Resources */,
+				AB5CA6181EE1011B00E80A64 /* zuoye_icon_record2@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +334,7 @@
 			files = (
 				ABF230BE1EE00B570015CEAF /* RecordView.m in Sources */,
 				ABF230911EE00AE30015CEAF /* ViewController.m in Sources */,
+				AB5CA61E1EE109BB00E80A64 /* AVPlayerManager.m in Sources */,
 				ABF2308E1EE00AE30015CEAF /* AppDelegate.m in Sources */,
 				ABF2308B1EE00AE30015CEAF /* main.m in Sources */,
 			);
@@ -522,6 +576,7 @@
 				ABF230B51EE00AE30015CEAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ABF230B61EE00AE30015CEAF /* Build configuration list for PBXNativeTarget "RecordDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +585,7 @@
 				ABF230B81EE00AE30015CEAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ABF230B91EE00AE30015CEAF /* Build configuration list for PBXNativeTarget "RecordDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +594,7 @@
 				ABF230BB1EE00AE30015CEAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,8 +10,17 @@
 
 @interface RecordView : UIView
 
-- (instancetype)initWithSeconds:(NSTimeInterval)recordSeconds
-                     viewHeight:(CGFloat)height
-                      recordUrl:(NSString *)url;
+- (instancetype)initWithFrame:(CGRect)frame
+                      Seconds:(NSInteger)recordSeconds
+                   viewHeight:(CGFloat)height
+                    recordUrl:(NSString *)url;
+
+
+- (void)startPlay;
+
+- (void)stopPlay;
+
+
+@property (nonatomic, assign) BOOL isPlaying;
 
 @end
