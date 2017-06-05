@@ -1,4 +1,4 @@
-//
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  //
 //  AVPlayerItemManager.m
 //  RecordDemo
 //
@@ -13,6 +13,8 @@
 @property (nonatomic, strong) AVPlayerItem *playerItem;
 
 @property (nonatomic, strong) AVPlayer *player;
+
+@property (nonatomic, strong) RecordView *playInView;
 
 @end
 
@@ -32,13 +34,34 @@
     _playerItem = [AVPlayerItem playerItemWithURL:[NSURL URLWithString:recordUrlString]];
 }
 
-- (void)playerStart{
+- (void)playerStartInView:(RecordView *)view{
+    
+    if (_playInView == nil) {
+        _playInView = view;
+    }else{
+        [_playInView.statusImageView stopAnimating];
+        _playInView = view;
+    }
+    
+    if (_playerItem==nil) {
+        NSLog(@"请设置AVPlayerManager的recordUrlString");
+        return;
+    }
+    
+    if (self.isPlaying) {
+        [self playerStop];
+    }
+    
     _player = [AVPlayer playerWithPlayerItem:_playerItem];
     [_player play];
+    self.isPlaying = YES;
 }
 
 - (void)playerStop{
     [_player pause];
+    _playerItem = nil;
+    _player = nil;
+    self.isPlaying = NO;
 }
 
 @end

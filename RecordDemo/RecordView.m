@@ -24,11 +24,10 @@
 @property (nonatomic, assign) CGFloat maxViewWidth;
 //录音时间label
 @property (nonatomic, strong) UILabel *timeLabel;
-//playing status
-@property (nonatomic, strong) UIImageView *statusImageView;
 //statusImageView iamgeArray
 @property (nonatomic, strong) NSMutableArray *animationImages;
 
+@property (nonatomic, assign,readwrite) BOOL isPlaying;
 
 @end
 
@@ -118,9 +117,9 @@
                                                 name:AVPlayerItemDidPlayToEndTimeNotification
                                               object:_recordUrl];
     manager.recordUrlString = _recordUrl;
-    [manager playerStart];
+    [manager playerStartInView:self];
     
-    
+    self.isPlaying = YES;
     
     
 }
@@ -128,10 +127,14 @@
 - (void)stopPlay{
     [_statusImageView stopAnimating];
     [manager playerStop];
+    
+    self.isPlaying = NO;
 }
 
 - (void)playItemDidReachEnd:(NSNotification *)noti{
     [_statusImageView stopAnimating];
+    self.isPlaying = NO;
+    manager.isPlaying = NO;
 }
 
 

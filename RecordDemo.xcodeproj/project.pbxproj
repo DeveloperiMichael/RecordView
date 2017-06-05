@@ -146,14 +146,11 @@
 		ABF230881EE00AE30015CEAF /* RecordDemo */ = {
 			isa = PBXGroup;
 			children = (
+				ABF292471EE53CC000021DAE /* RecordPlayer */,
 				ABF2308C1EE00AE30015CEAF /* AppDelegate.h */,
 				ABF2308D1EE00AE30015CEAF /* AppDelegate.m */,
 				ABF2308F1EE00AE30015CEAF /* ViewController.h */,
 				ABF230901EE00AE30015CEAF /* ViewController.m */,
-				ABF230BC1EE00B570015CEAF /* RecordView.h */,
-				ABF230BD1EE00B570015CEAF /* RecordView.m */,
-				AB5CA61C1EE109BB00E80A64 /* AVPlayerManager.h */,
-				AB5CA61D1EE109BB00E80A64 /* AVPlayerManager.m */,
 				ABF230921EE00AE30015CEAF /* Main.storyboard */,
 				ABF230951EE00AE30015CEAF /* Assets.xcassets */,
 				ABF230971EE00AE30015CEAF /* LaunchScreen.storyboard */,
@@ -189,6 +186,17 @@
 				ABF230B01EE00AE30015CEAF /* Info.plist */,
 			);
 			path = RecordDemoUITests;
+			sourceTree = "<group>";
+		};
+		ABF292471EE53CC000021DAE /* RecordPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				ABF230BC1EE00B570015CEAF /* RecordView.h */,
+				ABF230BD1EE00B570015CEAF /* RecordView.m */,
+				AB5CA61C1EE109BB00E80A64 /* AVPlayerManager.h */,
+				AB5CA61D1EE109BB00E80A64 /* AVPlayerManager.m */,
+			);
+			name = RecordPlayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -20,7 +20,9 @@
 
 - (void)stopPlay;
 
+//playing status
+@property (nonatomic, strong) UIImageView *statusImageView;
 
-@property (nonatomic, assign) BOOL isPlaying;
+@property (nonatomic, assign,readonly) BOOL isPlaying;
 
 @end

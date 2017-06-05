@@ -8,14 +8,18 @@
 
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
+#import "RecordView.h"
+
 @interface AVPlayerManager : NSObject
 
 + (instancetype)sharedAVPlayerManager;
 
-- (void)playerStart;
+- (void)playerStartInView:(RecordView *)view;
 
 - (void)playerStop;
 
 @property (nonatomic, copy) NSString *recordUrlString;
+
+@property (nonatomic, assign) BOOL isPlaying;
 
 @end
