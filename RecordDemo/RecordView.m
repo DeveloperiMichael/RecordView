@@ -27,7 +27,6 @@
 //statusImageView iamgeArray
 @property (nonatomic, strong) NSMutableArray *animationImages;
 
-@property (nonatomic, assign,readwrite) BOOL isPlaying;
 
 @end
 
@@ -112,11 +111,12 @@
 
 - (void)startPlay{
     [_statusImageView startAnimating];
+    AVPlayerItem *playerItem = [AVPlayerItem playerItemWithURL:[NSURL URLWithString:_recordUrl]];
     [[NSNotificationCenter defaultCenter]addObserver:self
                                             selector:@selector(playItemDidReachEnd:)
                                                 name:AVPlayerItemDidPlayToEndTimeNotification
-                                              object:_recordUrl];
-    manager.recordUrlString = _recordUrl;
+                                              object:playerItem];
+    manager.playerItem = playerItem;
     [manager playerStartInView:self];
     
     self.isPlaying = YES;
@@ -126,8 +126,7 @@
 
 - (void)stopPlay{
     [_statusImageView stopAnimating];
-    [manager playerStop];
-    
+    [manager playerStopInView:self];
     self.isPlaying = NO;
 }
 

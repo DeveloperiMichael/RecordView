@@ -16,9 +16,9 @@
 
 - (void)playerStartInView:(RecordView *)view;
 
-- (void)playerStop;
+- (void)playerStopInView:(RecordView *)view;
 
-@property (nonatomic, copy) NSString *recordUrlString;
+@property (nonatomic, strong) AVPlayerItem *playerItem;
 
 @property (nonatomic, assign) BOOL isPlaying;
 

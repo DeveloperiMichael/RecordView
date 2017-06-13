@@ -23,6 +23,6 @@
 //playing status
 @property (nonatomic, strong) UIImageView *statusImageView;
 
-@property (nonatomic, assign,readonly) BOOL isPlaying;
+@property (nonatomic, assign) BOOL isPlaying;
 
 @end

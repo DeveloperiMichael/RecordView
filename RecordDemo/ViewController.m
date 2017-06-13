@@ -21,7 +21,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     NSArray *array = [NSArray arrayWithObjects:
-                      @"http://fjdx.sc.chinaz.com/Files/DownLoad/sound1/201501/5466.mp3",
+                      @"http://qiniu.shbaoyuantech.com/homework/media9.mp3",
                       @"http://sc1.111ttt.com/2015/1/06/06/99060941326.mp3",
                       @"http://sc1.111ttt.com/2017/1/05/10/298101027072.mp3",
                       @"http://sc1.111ttt.com/2015/1/06/06/99060941326.mp3",

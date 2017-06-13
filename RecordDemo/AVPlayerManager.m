@@ -10,7 +10,7 @@
 
 @interface AVPlayerManager()
 
-@property (nonatomic, strong) AVPlayerItem *playerItem;
+
 
 @property (nonatomic, strong) AVPlayer *player;
 
@@ -30,8 +30,8 @@
     return manager;
 }
 
-- (void)setRecordUrlString:(NSString *)recordUrlString {
-    _playerItem = [AVPlayerItem playerItemWithURL:[NSURL URLWithString:recordUrlString]];
+- (void)setPlayerItem:(AVPlayerItem *)playerItem {
+    _playerItem = playerItem;
 }
 
 - (void)playerStartInView:(RecordView *)view{
@@ -39,17 +39,17 @@
     if (_playInView == nil) {
         _playInView = view;
     }else{
-        [_playInView.statusImageView stopAnimating];
+        if (_playInView != view) {
+            _playInView.isPlaying = NO;
+            [_playInView.statusImageView stopAnimating];
+        }
+        
         _playInView = view;
     }
     
     if (_playerItem==nil) {
-        NSLog(@"请设置AVPlayerManager的recordUrlString");
+        NSLog(@"请设置AVPlayerManager的_playerItem");
         return;
-    }
-    
-    if (self.isPlaying) {
-        [self playerStop];
     }
     
     _player = [AVPlayer playerWithPlayerItem:_playerItem];
@@ -57,7 +57,7 @@
     self.isPlaying = YES;
 }
 
-- (void)playerStop{
+- (void)playerStopInView:(RecordView *)view{
     [_player pause];
     _playerItem = nil;
     _player = nil;
